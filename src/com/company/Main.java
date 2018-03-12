@@ -1,16 +1,15 @@
 
 package com.company;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class Main {
 
 
     public static void main ( String[] args ) throws IOException {
-/*
-File file = new File ("text.txt");
-FileWriter fw = new FileWriter (file);
+File       file = new File ("text.txt");
+FileWriter fw   = new FileWriter (file);
 
 
     fw.write("This is TEXT to be written in our file-1 )).\n");
@@ -18,8 +17,8 @@ FileWriter fw = new FileWriter (file);
 
 
 
-    File file2 = new File ("text2.txt");
-    BufferedWriter fw2 = new BufferedWriter (new FileWriter (file2 ));
+    File           file2 = new File ("text2.txt");
+    BufferedWriter fw2   = new BufferedWriter (new FileWriter (file2 ));
     fw2.write ("Another text added to a new file #2.\n");
     fw2.close();
 
@@ -48,7 +47,6 @@ BufferedReader br = new BufferedReader (new FileReader (file));
     String str = new String ( "Это бяка. Она живет в городе бяка. Ей, бяка, от роду лет. Похоже, что она та еще бяка." );
 
         System.out.println(str.replaceAll("бяка","ЦЕНЗУРА!!!"));
-*/
 
 
         Scanner scan = new Scanner ( System.in );
