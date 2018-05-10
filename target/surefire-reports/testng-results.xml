@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="18" passed="17">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="49" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+    <groups>
+      <group name="1">
+        <method signature="SmokeTest.method1()[pri:1, instance:company.SmokeTest@2133c8f8]" name="method1" class="company.SmokeTest"/>
+      </group> <!-- 1 -->
+      <group name="2">
+        <method signature="SmokeTest.method2()[pri:2, instance:company.SmokeTest@2133c8f8]" name="method2" class="company.SmokeTest"/>
+      </group> <!-- 2 -->
+      <group name="3">
+        <method signature="SmokeTest.method3()[pri:3, instance:company.SmokeTest@2133c8f8]" name="method3" class="company.SmokeTest"/>
+        <method signature="SmokeTest.errorMethod()[pri:4, instance:company.SmokeTest@2133c8f8]" name="errorMethod" class="company.SmokeTest"/>
+      </group> <!-- 3 -->
+      <group name="groupB">
+        <method signature="SmokeTest.test2(int)[pri:0, instance:company.SmokeTest@2133c8f8]" name="test2" class="company.SmokeTest"/>
+      </group> <!-- groupB -->
+      <group name="groupA">
+        <method signature="SmokeTest.test1(int)[pri:0, instance:company.SmokeTest@2133c8f8]" name="test1" class="company.SmokeTest"/>
+      </group> <!-- groupA -->
+    </groups>
+    <test name="Surefire test" duration-ms="49" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+      <class name="company.SmokeTest">
+        <test-method status="PASS" signature="test2(int)[pri:0, instance:company.SmokeTest@2133c8f8]" name="test2" duration-ms="6" started-at="2018-04-12T11:56:10Z" data-provider="dataProvider" finished-at="2018-04-12T11:56:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@2133c8f8]" name="checkThreads" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@2133c8f8]" name="checkThreads" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@2133c8f8]" name="checkThreads" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@2133c8f8]" name="checkThreads" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@2133c8f8]" name="checkThreads" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@2133c8f8]" name="checkThreads" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@2133c8f8]" name="checkThreads" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@2133c8f8]" name="checkThreads" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@2133c8f8]" name="checkThreads" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@2133c8f8]" name="checkThreads" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThreads -->
+        <test-method status="FAIL" signature="test1(int)[pri:0, instance:company.SmokeTest@2133c8f8]" name="test1" duration-ms="0" started-at="2018-04-12T11:56:10Z" data-provider="dataProvider" finished-at="2018-04-12T11:56:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [3] but found [2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [3] but found [2]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at company.SmokeTest.test1(SmokeTest.java:54)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="method1()[pri:1, instance:company.SmokeTest@2133c8f8]" name="method1" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method1 -->
+        <test-method status="PASS" signature="method2()[pri:2, instance:company.SmokeTest@2133c8f8]" name="method2" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method2 -->
+        <test-method status="PASS" signature="method3()[pri:3, instance:company.SmokeTest@2133c8f8]" name="method3" duration-ms="0" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method3 -->
+        <test-method status="PASS" signature="dependOnMethod1()[pri:5, instance:company.SmokeTest@2133c8f8]" name="dependOnMethod1" duration-ms="1" started-at="2018-04-12T11:56:10Z" depends-on-methods="company.SmokeTest.method2" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dependOnMethod1 -->
+        <test-method status="PASS" signature="errorMethod()[pri:4, instance:company.SmokeTest@2133c8f8]" name="errorMethod" duration-ms="0" started-at="2018-04-12T11:56:10Z" description="AssertionError-text" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorMethod -->
+        <test-method status="PASS" signature="dependsOnGroup1()[pri:6, instance:company.SmokeTest@2133c8f8]" name="dependsOnGroup1" duration-ms="0" depends-on-groups="1" started-at="2018-04-12T11:56:10Z" finished-at="2018-04-12T11:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dependsOnGroup1 -->
+      </class> <!-- company.SmokeTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

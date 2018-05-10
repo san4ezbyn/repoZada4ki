@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" verbose="2">
+    <test name="SmokeTest">
+        <groups>
+            <!--<run>
+                <exclude name="1"/>
+                <include name="2"/>
+                <include name="3"/>
+            </run>-->
+        </groups>
+        <classes>
+            <class name="company.SmokeTest"/>
+        </classes>
+    </test>
+    <test name="CriticalPath">
+        <packages>
+            <package name="company"/>
+        </packages>
+    </test>
+</suite>
