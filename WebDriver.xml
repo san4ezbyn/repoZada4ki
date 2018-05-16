@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" verbose="2">
+    <test name="WebDriverTest2">
+
+        <classes>
+            <class name="company.WebDriverTest2"/>
+        </classes>
+    </test>
+
+</suite>

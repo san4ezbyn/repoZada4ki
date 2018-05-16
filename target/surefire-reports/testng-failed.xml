@@ -3,6 +3,13 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
   <test thread-count="1" verbose="0" name="Surefire test(failed)">
     <classes>
+      <class name="WebDriverTest">
+        <methods>
+          <include name="selWebDriver1"/>
+          <include name="tearDown"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- WebDriverTest -->
       <class name="company.SmokeTest">
         <methods>
           <include name="test1" invocation-numbers="0"/>

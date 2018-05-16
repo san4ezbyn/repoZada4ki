@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
         private static WebDriver driver;
         WebDriverWait wait;
 
-        @BeforeMethod
+        @BeforeClass
         public void init ( ) {
             System.setProperty ( "webdriver.gecko.driver" , "C:\\Program Files\\Geckodriver\\geckodriver.exe" );
             driver = new FirefoxDriver ();
@@ -40,10 +40,10 @@ import java.util.concurrent.TimeUnit;
             Assert.assertEquals ( true , bool );
         }
 
-        @Test
+        @Test (dependsOnMethods = {"logIn"})
         public void writeLetter ( ) throws InterruptedException {
 
-            logIn ();
+
             WebElement newLetter2 = driver.findElement ( By.cssSelector ( ".mail-ComposeButton-Text" ) );
             WebElement newLetter  = wait.until ( ExpectedConditions.presenceOfElementLocated ( By.cssSelector ( ".mail-ComposeButton-Text" ) ) );
             newLetter.click ();
@@ -58,14 +58,18 @@ import java.util.concurrent.TimeUnit;
 
             WebElement bodyLetter = driver.findElement ( By.cssSelector ( ".cke_source" ) );
             bodyLetter.sendKeys ( "What is Lorem Ipsum?\n" );
+        }
+
+        @Test (dependsOnMethods = {"writeLetter"})
+        public void draftLetter() {
 
             try {
                 WebElement goToDrafts = driver.findElement ( By.cssSelector ( "a.ns-view-folder:nth-child(5) > span:nth-child(2)" ) );
                 goToDrafts.click ();
 
                 WebElement clickDrafts = driver.findElement ( By.cssSelector ( ".ns-view-id-313 > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > span:nth-child(1) > span:nth-child(3) > span:nth-child(1)" ) );
-                WebElement assDraft = driver.findElement ( By.cssSelector ( ".ns-view-id-339 > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > span:nth-child(2) > span:nth-child(3) > span:nth-child(2) > span:nth-child(1)" ) );
-                boolean    bool     = assDraft.isDisplayed ();
+                WebElement assDraft    = driver.findElement ( By.cssSelector ( ".ns-view-id-339 > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > span:nth-child(2) > span:nth-child(3) > span:nth-child(2) > span:nth-child(1)" ) );
+                boolean    bool        = assDraft.isDisplayed ();
                 Assert.assertEquals ( true , bool );
                 clickDrafts.click ();
 
@@ -82,9 +86,16 @@ import java.util.concurrent.TimeUnit;
             } catch (NoAlertPresentException nape) {
                 System.out.println ( "OK" );
             }
+        }
 
-            WebElement sendLetter = wait.until ( ExpectedConditions.elementToBeClickable ( By.id ( "nb-16" ) ) );
-            sendLetter.click ();
+            @Test (dependsOnMethods = {"draftLetter"})
+            public void sendLetter() {
+
+                WebElement sendLetter = wait.until ( ExpectedConditions.elementToBeClickable ( By.id ( "nb-16" ) ) );
+                sendLetter.click ();
+            }
+        @Test (dependsOnMethods = {"sendLetter"})
+        public void sentLetter() {
 
             WebElement gotoSentLetter = driver.findElement ( By.cssSelector ( "a.ns-view-folder:nth-child(2) > span:nth-child(2)" ) );
             WebElement assSentLetter  = driver.findElement ( By.cssSelector ( "a.ns-view-folder:nth-child(2) > span:nth-child(2)" ) );
@@ -94,20 +105,19 @@ import java.util.concurrent.TimeUnit;
 
             WebElement closeAlert = wait.until ( ExpectedConditions.visibilityOfElementLocated ( By.cssSelector ( "._nb-small-action-button" ) ) );
             closeAlert.click ();
+        }
+            @Test (dependsOnMethods = {"sentLetter"})
+            public void logOut() {
+                WebElement goOutBox = driver.findElement ( By.cssSelector ( "#recipient-1" ) );
+                goOutBox.click ();
 
-            /*WebElement alertPopup = (new WebDriverWait(driver, 30))
-            .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("._nb-small-action-button")));
-            driver.switchTo().alert().dismiss();*/
-
-            WebElement goOutBox = driver.findElement ( By.cssSelector ( "#recipient-1" ) );
-            goOutBox.click ();
-
-            //Thread.sleep ( 40 );
-            WebElement goOutBoxMenu = wait.until ( ExpectedConditions.elementToBeClickable ( By.cssSelector ( "div.b-mail-dropdown__item:nth-child(8) > a:nth-child(1)" ) ) );
-            goOutBoxMenu.click ();
+                WebElement goOutBoxMenu = wait.until ( ExpectedConditions.elementToBeClickable ( By.cssSelector ( "div.b-mail-dropdown__item:nth-child(8) > a:nth-child(1)" ) ) );
+                goOutBoxMenu.click ();
+            }
+        @Test (dependsOnMethods = {"logOut"})
+        public void sentLetterCheck() {
 
             try {
-
                 WebElement enterMail2 = driver.findElement ( By.cssSelector ( "a.button" ) );
                 wait.until ( ExpectedConditions.elementToBeClickable ( By.cssSelector ( "a.button" ) ) );
                 enterMail2.click ();
@@ -136,7 +146,7 @@ import java.util.concurrent.TimeUnit;
             String     compareL      = compareLetter.getText ();
             Assert.assertEquals ( "ivan ivanov" , compareL );
         }
-        @AfterMethod
+        @AfterClass
         void tearDown ( ) {
             driver.close ();
         }
