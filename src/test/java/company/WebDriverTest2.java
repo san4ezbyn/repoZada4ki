@@ -1,170 +1,139 @@
 package company;
+
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.*;
-import java.util.concurrent.TimeUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
-    public class WebDriverTest2 {
-
-        private static WebDriver driver;
-        WebDriverWait wait;
-
-        @BeforeClass
-        public void init ( ) {
-            System.setProperty ( "webdriver.gecko.driver" , "C:\\Program Files\\Geckodriver\\geckodriver.exe" );
-            driver = new FirefoxDriver ();
-            driver.manage ().timeouts ().implicitlyWait ( 15 , TimeUnit.SECONDS );
-            wait = new WebDriverWait ( driver , 40 );
-            driver.get ( "https://yandex.by/" );
-        }
-        @Test
-        public void logIn ( ) {
-
-            WebElement enterMail = driver.findElement ( By.cssSelector ( " .desk-notif-card__login-enter-expanded" ) );
-            enterMail.click ();
-
-            WebElement loginField = driver.findElement ( By.cssSelector ( "div.passport-Domik-Form-Field:nth-child(10) > label:nth-child(1) > input:nth-child(1)" ) );
-            loginField.sendKeys ( "ivanivanovbyn" );
-
-            WebElement passwordField = driver.findElement ( By.cssSelector ( "div.passport-Domik-Form-Field:nth-child(11) > label:nth-child(1) > input:nth-child(1)" ) );
-            passwordField.sendKeys ( "borisov18" );
-
-            WebElement loginButtonEnter = driver.findElement ( By.cssSelector ( "button.passport-Button:nth-child(1)" ) );
-            loginButtonEnter.click ();
-
-            WebElement loginTrue = driver.findElement ( By.cssSelector ( ".mail-User-Name" ) );
-            boolean    bool      = loginTrue.isDisplayed ();
-            Assert.assertEquals ( true , bool );
-        }
-
-        @Test (dependsOnMethods = {"logIn"})
-        public void writeLetter ( ) throws InterruptedException {
+import java.util.List;
+import java.util.Random;
 
 
-            WebElement newLetter2 = driver.findElement ( By.cssSelector ( ".mail-ComposeButton-Text" ) );
-            WebElement newLetter  = wait.until ( ExpectedConditions.presenceOfElementLocated ( By.cssSelector ( ".mail-ComposeButton-Text" ) ) );
-            newLetter.click ();
+public class WebDriverTest2 {
 
-            TimeUnit.SECONDS.sleep ( 20 );
+    private WebDriver     driver;
+    private WebDriverWait wait;
 
-            WebElement newLetterToWhome = wait.until ( ExpectedConditions.presenceOfElementLocated ( By.cssSelector ( ".mail-Compose-Field_to > div:nth-child(3) > div:nth-child(1)" ) ) );
-            newLetterToWhome.sendKeys ( "ooo@tut.by" );
+    final static private String PLACEHOLDER  = "webdriver.chrome.driver";//"webdriver.gecko.driver";
+    //final static private String PATH         = "C:\\Program Files\\Geckodriver\\geckodriver.exe";
+    final static private String PATH         = "C:\\Program Files\\ChromeDriver\\chromedriver.exe";
+    final static private String URL          = "https://yandex.by/";
+    final static private String LOGINNAME    = "ivanivanovbyn";
+    final static private String PASSWRDVALUE = "borisov18";
+    final static private String RECEIVER     = "ooo@tut.by";
+    final static private String BODYTEXT     = "What is Lorem Ipsum?\n";
+    final static private int    TIME_OUT     = 60;
+    private static       String topic        = String.format ( "№- %s" , new Random ().nextInt ( 10000 ) );
 
-            WebElement newLetterTopic = driver.findElement ( By.cssSelector ( "input.mail-Compose-Field-Input-Controller" ) );
-            newLetterTopic.sendKeys ( "wwwwwwwww" );
-
-            WebElement bodyLetter = driver.findElement ( By.cssSelector ( ".cke_source" ) );
-            bodyLetter.sendKeys ( "What is Lorem Ipsum?\n" );
-        }
-
-        @Test (dependsOnMethods = {"writeLetter"})
-        public void draftLetter() {
-
-            try {
-                WebElement goToDrafts = driver.findElement ( By.cssSelector ( "a.ns-view-folder:nth-child(5) > span:nth-child(2)" ) );
-                goToDrafts.click ();
-
-                WebElement clickDrafts = driver.findElement ( By.cssSelector ( ".ns-view-id-313 > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > span:nth-child(1) > span:nth-child(3) > span:nth-child(1)" ) );
-                WebElement assDraft    = driver.findElement ( By.cssSelector ( ".ns-view-id-339 > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > span:nth-child(2) > span:nth-child(3) > span:nth-child(2) > span:nth-child(1)" ) );
-                boolean    bool        = assDraft.isDisplayed ();
-                Assert.assertEquals ( true , bool );
-                clickDrafts.click ();
-
-                WebElement clickPopUp = driver.findElement ( By.cssSelector ( "._nb-small-action-button" ) );
-                clickPopUp.click ();
-
-            } catch (NoSuchElementException nsee) {
-                System.out.println ( "OK-1" );
-                WebElement alertPopup = ( new WebDriverWait ( driver , 30 ) )
-                        .until ( ExpectedConditions.presenceOfElementLocated ( By.cssSelector ( "button.nb-button:nth-child(3)" ) ) );
-                //driver.switchTo ().alert ().dismiss ();
-                alertPopup.click ();
-
-            } catch (NoAlertPresentException nape) {
-                System.out.println ( "OK" );
-            }
-        }
-
-            @Test (dependsOnMethods = {"draftLetter"})
-            public void sendLetter() {
-
-                WebElement sendLetter = wait.until ( ExpectedConditions.elementToBeClickable ( By.id ( "nb-16" ) ) );
-                sendLetter.click ();
-            }
-        @Test (dependsOnMethods = {"sendLetter"})
-        public void sentLetter() {
-
-            WebElement gotoSentLetter = driver.findElement ( By.cssSelector ( "a.ns-view-folder:nth-child(2) > span:nth-child(2)" ) );
-            WebElement assSentLetter  = driver.findElement ( By.cssSelector ( "a.ns-view-folder:nth-child(2) > span:nth-child(2)" ) );
-            boolean    bool           = assSentLetter.isDisplayed ();
-            Assert.assertEquals ( true , bool );
-            gotoSentLetter.click ();
-
-            WebElement closeAlert = wait.until ( ExpectedConditions.visibilityOfElementLocated ( By.cssSelector ( "._nb-small-action-button" ) ) );
-            closeAlert.click ();
-        }
-            @Test (dependsOnMethods = {"sentLetter"})
-            public void logOut() {
-                WebElement goOutBox = driver.findElement ( By.cssSelector ( "#recipient-1" ) );
-                goOutBox.click ();
-
-                WebElement goOutBoxMenu = wait.until ( ExpectedConditions.elementToBeClickable ( By.cssSelector ( "div.b-mail-dropdown__item:nth-child(8) > a:nth-child(1)" ) ) );
-                goOutBoxMenu.click ();
-            }
-        @Test (dependsOnMethods = {"logOut"})
-        public void sentLetterCheck() {
-
-            try {
-                WebElement enterMail2 = driver.findElement ( By.cssSelector ( "a.button" ) );
-                wait.until ( ExpectedConditions.elementToBeClickable ( By.cssSelector ( "a.button" ) ) );
-                enterMail2.click ();
-            } catch (UnhandledAlertException ue) {
-                System.out.print ( "Alert-2 took place" );
-            }
-            try {
-                WebElement passwordField2 = driver.findElement ( By.cssSelector ( ".passport-Input-Controller" ) );
-                passwordField2.sendKeys ( "borisov18" );
-
-                WebElement loginButtonEnter2 = driver.findElement ( By.cssSelector ( ".passport-Button" ) );
-                loginButtonEnter2.click ();
-            } catch (NoSuchElementException nsee) {
-                System.out.println ( "\nAlert-3 took place" );
-            }
-
-            WebElement searchBox = driver.findElement ( By.cssSelector ( ".textinput__control" ) );
-            searchBox.sendKeys ( "wwwwwwwww" );
-
-            WebElement searchClick = driver.findElement ( By.cssSelector ( ".button2" ) );
-            searchClick.click ();
-
-
-          WebElement compareLetter = driver.findElement ( By.xpath ( "/html/body/div[2]/div[3]/div/div[3]/div[3]/div[2]/div[5]/div[1]/div/div/div[2]/div/div[2]/div/div/div/a/div/span[1]/span[2]/span" ) );
-            //WebElement compareLetter = driver.findElement ( By.xpath ( "//body//span[last()]" ) );
-            String     compareL      = compareLetter.getText ();
-            Assert.assertEquals ( "ivan ivanov" , compareL );
-        }
-        @AfterClass
-        void tearDown ( ) {
-            driver.close ();
-        }
+    @BeforeClass
+    public void init ( ) {
+        System.setProperty ( PLACEHOLDER , PATH );
+        //driver = new FirefoxDriver ();
+        driver = new ChromeDriver ();
+        driver.manage ().window ().maximize ();
+        wait = new WebDriverWait ( driver , TIME_OUT );
+        driver.get ( URL );
     }
 
+    @Test
+    public void logIn ( ) {
 
+        WebElement enterMail = driver.findElement ( By.cssSelector ( ".desk-notif-card__login-enter-expanded" ) );
+        enterMail.click ();
 
+        WebElement loginField = driver.findElement ( By.cssSelector ( "div.passport-Domik-Form-Field:nth-child(10) > label:nth-child(1) > input:nth-child(1)" ) );
+        loginField.sendKeys ( LOGINNAME );
 
+        WebElement passwordField = driver.findElement ( By.cssSelector ( "div.passport-Domik-Form-Field:nth-child(11) > label:nth-child(1) > input:nth-child(1)" ) );
+        passwordField.sendKeys ( PASSWRDVALUE );
 
+        WebElement loginButtonEnter = driver.findElement ( By.cssSelector ( "button.passport-Button:nth-child(1)" ) );
+        loginButtonEnter.click ();
 
+        WebElement loginTrue = wait.until ( ExpectedConditions.visibilityOfElementLocated ( By.cssSelector ( ".mail-User-Name" ) ) );
+//        TODO fix me (проверка на правильный логин)
+        Assert.assertEquals ( loginTrue.getText () , "ivanivanovbyn" );
+    }
 
+    @Test(dependsOnMethods = "logIn")
+    public void writeLetter ( ) {
 
+        WebElement newLetter = wait.until ( ExpectedConditions.presenceOfElementLocated ( By.cssSelector ( ".mail-ComposeButton-Text" ) ) );
+        Assert.assertTrue ( newLetter.getText ().contains ( "Написать" ) );
+        newLetter.click ();
 
+        WebElement newLetterToWhome = wait.until ( ExpectedConditions.visibilityOfElementLocated ( By.cssSelector ( ".mail-Compose-Field_to > div:nth-child(3) > div:nth-child(1)" ) ) );
+        newLetterToWhome.sendKeys ( RECEIVER );
 
+        WebElement newLetterTopic = driver.findElement ( By.cssSelector ( "input.mail-Compose-Field-Input-Controller" ) );
+        newLetterTopic.sendKeys ( topic );
 
+        WebElement bodyLetter = driver.findElement ( By.cssSelector ( ".cke_source" ) );
+        bodyLetter.sendKeys ( BODYTEXT );
 
+        WebElement goToDrafts = wait.until ( ExpectedConditions.presenceOfElementLocated ( By.cssSelector ( "a.ns-view-folder:nth-child(5) > span:nth-child(2)" ) ) );
+        goToDrafts.click ();
 
+        WebElement clickPopUp = driver.findElement ( By.cssSelector ( "._nb-small-action-button" ) );
+        clickPopUp.click ();
 
+        isListOfEmailsDisplayed ( By.xpath ( "//span[@class='mail-MessageSnippet-Item mail-MessageSnippet-Item_subjectWrapper js-message-snippet-subject']" ) , topic );
 
+        Assert.assertTrue ( lettersListing ().matches ( topic ) );
+    }
 
+    @Test(dependsOnMethods = "writeLetter")
+    public void sendLetter ( ) {
+        WebElement sendLetter = wait.until ( ExpectedConditions.visibilityOfElementLocated ( By.xpath ( "//button[@type='submit']" ) ) );
+        sendLetter.click ();
+        WebElement gotoSentLetters2 = driver.findElement ( By.xpath ( "//a[@href='#sent']" ) );
+        gotoSentLetters2.click ();
+
+        Assert.assertTrue ( lettersListing ().matches ( topic ) );
+    }
+
+    @AfterClass
+    void tearDown ( ) {
+        driver.close ();
+    }
+
+    private boolean isListOfEmailsDisplayed ( final By emailsBy , final String subject ) {
+        return wait.until (
+                (ExpectedCondition <Boolean>) driver -> {
+                    try {
+                        List <WebElement> elements = driver.findElements ( emailsBy );
+                        for (WebElement element : elements) {
+                            String elementText = element.getText ().trim ();
+                            return elementText.equals ( subject );
+                        }
+                    } catch (StaleElementReferenceException e) {
+                        return false;
+                    } catch (TimeoutException toe) {
+                        return false;
+                    }
+                    return false;
+                }
+        );
+    }
+
+    private String lettersListing ( ) {
+        isListOfEmailsDisplayed ( By.xpath ( "//span[@class='mail-MessageSnippet-Item mail-MessageSnippet-Item_subjectWrapper js-message-snippet-subject']" ) , topic );
+        List <WebElement> mailList = driver.findElements ( By.xpath ( "//span[@class='mail-MessageSnippet-Item mail-MessageSnippet-Item_subjectWrapper js-message-snippet-subject']" ) );
+        for (WebElement element : mailList) {
+            String elementText = element.getText ().trim ();
+            if (topic.equals ( elementText )) {
+                wait.until ( ExpectedConditions.textToBePresentInElement ( element , topic ) );
+                element.click ();
+                return elementText;
+            }
+        }
+        return null;
+    }
+
+}
 

@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="2" ignored="0" total="19" passed="17">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="42518" started-at="2018-05-16T06:49:34Z" finished-at="2018-05-16T06:50:16Z">
+  <suite name="Surefire suite" duration-ms="69126" started-at="2018-05-24T11:46:49Z" finished-at="2018-05-24T11:47:58Z">
     <groups>
       <group name="1">
         <method signature="SmokeTest.method1()[pri:1, instance:company.SmokeTest@13fee20c]" name="method1" class="company.SmokeTest"/>
@@ -21,21 +21,21 @@
         <method signature="SmokeTest.test1(int)[pri:0, instance:company.SmokeTest@13fee20c]" name="test1" class="company.SmokeTest"/>
       </group> <!-- groupA -->
     </groups>
-    <test name="Surefire test" duration-ms="42518" started-at="2018-05-16T06:49:34Z" finished-at="2018-05-16T06:50:16Z">
+    <test name="Surefire test" duration-ms="69126" started-at="2018-05-24T11:46:49Z" finished-at="2018-05-24T11:47:58Z">
       <class name="WebDriverTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:WebDriverTest@180bc464]" name="init" is-config="true" duration-ms="7470" started-at="2018-05-16T06:49:34Z" finished-at="2018-05-16T06:49:41Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:WebDriverTest@180bc464]" name="init" is-config="true" duration-ms="29040" started-at="2018-05-24T11:46:49Z" finished-at="2018-05-24T11:47:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="selWebDriver1()[pri:0, instance:WebDriverTest@180bc464]" name="selWebDriver1" duration-ms="33524" started-at="2018-05-16T06:49:41Z" finished-at="2018-05-16T06:50:15Z">
+        <test-method status="FAIL" signature="selWebDriver1()[pri:0, instance:WebDriverTest@180bc464]" name="selWebDriver1" duration-ms="33271" started-at="2018-05-24T11:47:18Z" finished-at="2018-05-24T11:47:51Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Failed to interpret value as array
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'ASD-SMIRNOVA', ip: '192.168.12.35', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8712, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9632, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 07f66090-d905-4fff-9efd-253512d4da6e
 *** Element info: {Using=css selector, value=.b-datalist_letters_to > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a:nth-child(1) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2)}]]>
             </message>
             <full-stacktrace>
@@ -43,8 +43,8 @@ Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'ASD-SMIRNOVA', ip: '192.168.12.35', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8712, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9632, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 07f66090-d905-4fff-9efd-253512d4da6e
 *** Element info: {Using=css selector, value=.b-datalist_letters_to > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a:nth-child(1) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2)}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -104,23 +104,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selWebDriver1 -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:WebDriverTest@180bc464]" name="tearDown" is-config="true" duration-ms="1466" started-at="2018-05-16T06:50:15Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:WebDriverTest@180bc464]" name="tearDown" is-config="true" duration-ms="6719" started-at="2018-05-24T11:47:51Z" finished-at="2018-05-24T11:47:58Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Failed to decode response from marionette
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'ASD-SMIRNOVA', ip: '192.168.12.35', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8712, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9632, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 07f66090-d905-4fff-9efd-253512d4da6e]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'ASD-SMIRNOVA', ip: '192.168.12.35', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8712, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9632, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 07f66090-d905-4fff-9efd-253512d4da6e
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -175,7 +175,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
         </test-method> <!-- tearDown -->
       </class> <!-- WebDriverTest -->
       <class name="company.SmokeTest">
-        <test-method status="PASS" signature="test2(int)[pri:0, instance:company.SmokeTest@13fee20c]" name="test2" duration-ms="5" started-at="2018-05-16T06:49:34Z" data-provider="dataProvider" finished-at="2018-05-16T06:49:34Z">
+        <test-method status="PASS" signature="test2(int)[pri:0, instance:company.SmokeTest@13fee20c]" name="test2" duration-ms="0" started-at="2018-05-24T11:46:49Z" data-provider="dataProvider" finished-at="2018-05-24T11:46:49Z">
           <params>
             <param index="0">
               <value>
@@ -186,47 +186,47 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThreads -->
-        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThreads -->
-        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThreads -->
-        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThreads -->
-        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThreads -->
-        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThreads -->
-        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="1" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThreads -->
-        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThreads -->
-        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThreads -->
-        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="checkThreads()[pri:0, instance:company.SmokeTest@13fee20c]" name="checkThreads" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThreads -->
-        <test-method status="FAIL" signature="test1(int)[pri:0, instance:company.SmokeTest@13fee20c]" name="test1" duration-ms="1" started-at="2018-05-16T06:50:16Z" data-provider="dataProvider" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="FAIL" signature="test1(int)[pri:0, instance:company.SmokeTest@13fee20c]" name="test1" duration-ms="16" started-at="2018-05-24T11:47:58Z" data-provider="dataProvider" finished-at="2018-05-24T11:47:58Z">
           <params>
             <param index="0">
               <value>
@@ -283,30 +283,30 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="method1()[pri:1, instance:company.SmokeTest@13fee20c]" name="method1" duration-ms="0" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="method1()[pri:1, instance:company.SmokeTest@13fee20c]" name="method1" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method1 -->
-        <test-method status="PASS" signature="method2()[pri:2, instance:company.SmokeTest@13fee20c]" name="method2" duration-ms="0" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method2 -->
-        <test-method status="PASS" signature="method3()[pri:3, instance:company.SmokeTest@13fee20c]" name="method3" duration-ms="0" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method3 -->
-        <test-method status="PASS" signature="errorMethod()[pri:4, instance:company.SmokeTest@13fee20c]" name="errorMethod" duration-ms="0" started-at="2018-05-16T06:50:16Z" description="AssertionError-text" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="errorMethod()[pri:4, instance:company.SmokeTest@13fee20c]" name="errorMethod" duration-ms="0" started-at="2018-05-24T11:47:58Z" description="AssertionError-text" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- errorMethod -->
-        <test-method status="PASS" signature="dependOnMethod1()[pri:5, instance:company.SmokeTest@13fee20c]" name="dependOnMethod1" duration-ms="1" started-at="2018-05-16T06:50:16Z" depends-on-methods="company.SmokeTest.method2" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="dependOnMethod1()[pri:5, instance:company.SmokeTest@13fee20c]" name="dependOnMethod1" duration-ms="0" started-at="2018-05-24T11:47:58Z" depends-on-methods="company.SmokeTest.method2" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dependOnMethod1 -->
-        <test-method status="PASS" signature="dependsOnGroup1()[pri:6, instance:company.SmokeTest@13fee20c]" name="dependsOnGroup1" duration-ms="0" depends-on-groups="1" started-at="2018-05-16T06:50:16Z" finished-at="2018-05-16T06:50:16Z">
+        <test-method status="PASS" signature="dependsOnGroup1()[pri:6, instance:company.SmokeTest@13fee20c]" name="dependsOnGroup1" duration-ms="0" depends-on-groups="1" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dependsOnGroup1 -->
+        <test-method status="PASS" signature="method3()[pri:3, instance:company.SmokeTest@13fee20c]" name="method3" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method3 -->
+        <test-method status="PASS" signature="method2()[pri:2, instance:company.SmokeTest@13fee20c]" name="method2" duration-ms="0" started-at="2018-05-24T11:47:58Z" finished-at="2018-05-24T11:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method2 -->
       </class> <!-- company.SmokeTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->

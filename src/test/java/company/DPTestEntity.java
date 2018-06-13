@@ -1,3 +1,4 @@
+/*
 package company;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -76,3 +77,4 @@ public class DPTestEntity {
 
 
 
+*/

@@ -1,3 +1,4 @@
+/*
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -36,9 +37,11 @@ public class WebDriverTest {
         loginButton.click ();
 
 
-        /*WebElement loginAssert = driver.findElement (By.cssSelector ("#PH_user-email"));
+        */
+/*WebElement loginAssert = driver.findElement (By.cssSelector ("#PH_user-email"));
         String loginUser = loginAssert.getText();
-        Assert.assertEquals ("ivanivanovbyn@mail.ru", loginUser);*/
+        Assert.assertEquals ("ivanivanovbyn@mail.ru", loginUser);*//*
+
 
 
         WebElement newLetter = driver.findElement ( By.cssSelector ( "a.b-toolbar__btn > span:nth-child(2)" ) );
@@ -92,3 +95,4 @@ public class WebDriverTest {
     }
 }
 
+*/

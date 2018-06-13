@@ -1,29 +1,29 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 20, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 43.29 s <<< FAILURE! - in TestSuite
-selWebDriver1(WebDriverTest)  Time elapsed: 33.535 s  <<< FAILURE!
+Tests run: 20, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 69.575 s <<< FAILURE! - in TestSuite
+selWebDriver1(WebDriverTest)  Time elapsed: 33.287 s  <<< FAILURE!
 org.openqa.selenium.WebDriverException: 
 Failed to interpret value as array
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'ASD-SMIRNOVA', ip: '192.168.12.35', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8712, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9632, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 07f66090-d905-4fff-9efd-253512d4da6e
 *** Element info: {Using=css selector, value=.b-datalist_letters_to > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a:nth-child(1) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2)}
 	at WebDriverTest.selWebDriver1(WebDriverTest.java:69)
 
-tearDown(WebDriverTest)  Time elapsed: 35.002 s  <<< FAILURE!
+tearDown(WebDriverTest)  Time elapsed: 40.007 s  <<< FAILURE!
 org.openqa.selenium.WebDriverException: 
 Failed to decode response from marionette
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'ASD-SMIRNOVA', ip: '192.168.12.35', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8712, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9632, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 07f66090-d905-4fff-9efd-253512d4da6e
 	at WebDriverTest.tearDown(WebDriverTest.java:91)
 
-test1(company.SmokeTest)  Time elapsed: 0.001 s  <<< FAILURE!
+test1(company.SmokeTest)  Time elapsed: 0.016 s  <<< FAILURE!
 java.lang.AssertionError: expected [3] but found [2]
 	at company.SmokeTest.test1(SmokeTest.java:59)
 

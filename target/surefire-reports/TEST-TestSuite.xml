@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="43.29" tests="20" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="69.575" tests="20" errors="0" skipped="0" failures="3">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\DAKYKO~1.ALE\AppData\Local\Temp\surefire3322382162725160053\surefirebooter9146444809287538120.jar C:\Users\dakyko.alexander\AppData\Local\Temp\surefire3322382162725160053 2018-05-16T08-49-32_416-jvmRun1 surefire2698958301199419168tmp surefire_01679330832597424186tmp"/>
+    <property name="sun.java.command" value="C:\Users\DAKYKO~1.ALE\AppData\Local\Temp\surefire7833448793695158762\surefirebooter6613471275154208283.jar C:\Users\dakyko.alexander\AppData\Local\Temp\surefire7833448793695158762 2018-05-24T13-46-47_516-jvmRun1 surefire7409688705401492133tmp surefire_07582845863779863723tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\dakyko.alexander\IdeaProjects\ZADA4KI\repoZada4ki\target\test-classes;C:\Users\dakyko.alexander\IdeaProjects\ZADA4KI\repoZada4ki\target\classes;C:\Users\dakyko.alexander\.m2\repository\org\testng\testng\6.14.2\testng-6.14.2.jar;C:\Users\dakyko.alexander\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\dakyko.alexander\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\dakyko.alexander\.m2\repository\org\seleniumhq\selenium\selenium-java\3.11.0\selenium-java-3.11.0.jar;C:\Users\dakyko.alexander\.m2\repository\org\seleniumhq\selenium\selenium-api\3.11.0\selenium-api-3.11.0.jar;C:\Users\dakyko.alexander\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.11.0\selenium-chrome-driver-3.11.0.jar;C:\Users\dakyko.alexander\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.11.0\selenium-edge-driver-3.11.0.jar;C:\Users\dakyko.alexander\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.11.0\selenium-firefox-driver-3.11.0.jar;C:\Users\dakyko.alexander\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.11.0\selenium-ie-driver-3.11.0.jar;C:\Users\dakyko.alexander\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.11.0\selenium-opera-driver-3.11.0.jar;C:\Users\dakyko.alexander\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.11.0\selenium-remote-driver-3.11.0.jar;C:\Users\dakyko.alexander\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.11.0\selenium-safari-driver-3.11.0.jar;C:\Users\dakyko.alexander\.m2\repository\org\seleniumhq\selenium\selenium-support\3.11.0\selenium-support-3.11.0.jar;C:\Users\dakyko.alexander\.m2\repository\net\bytebuddy\byte-buddy\1.7.9\byte-buddy-1.7.9.jar;C:\Users\dakyko.alexander\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\dakyko.alexander\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\dakyko.alexander\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\dakyko.alexander\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\dakyko.alexander\.m2\repository\com\google\guava\guava\23.6-jre\guava-23.6-jre.jar;C:\Users\dakyko.alexander\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\dakyko.alexander\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\dakyko.alexander\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\dakyko.alexander\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\dakyko.alexander\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\dakyko.alexander\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\dakyko.alexander\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\dakyko.alexander\.m2\repository\com\squareup\okhttp3\okhttp\3.9.1\okhttp-3.9.1.jar;C:\Users\dakyko.alexander\.m2\repository\com\squareup\okio\okio\1.13.0\okio-1.13.0.jar;C:\Users\dakyko.alexander\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\Users\dakyko.alexander\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\dakyko.alexander"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\DAKYKO~1.ALE\AppData\Local\Temp\surefire3322382162725160053\surefirebooter9146444809287538120.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\DAKYKO~1.ALE\AppData\Local\Temp\surefire7833448793695158762\surefirebooter6613471275154208283.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,39 +61,51 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="test2" classname="company.SmokeTest" time="0.006"/>
-  <testcase name="selWebDriver1" classname="WebDriverTest" time="33.535">
-    <failure message="Failed to interpret value as array&#10;Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;&#10;System info: host: &apos;ASD-SMIRNOVA&apos;, ip: &apos;192.168.12.35&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8712, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}&#10;Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21&#10;*** Element info: {Using=css selector, value=.b-datalist_letters_to &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; a:nth-child(1) &gt; div:nth-child(4) &gt; div:nth-child(3) &gt; div:nth-child(2)}" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+  <testcase name="test2" classname="company.SmokeTest" time="0"/>
+  <testcase name="selWebDriver1" classname="WebDriverTest" time="33.287">
+    <failure message="Failed to interpret value as array&#10;Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;&#10;System info: host: &apos;ASD-SMIRNOVA&apos;, ip: &apos;192.168.12.35&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9632, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}&#10;Session ID: 07f66090-d905-4fff-9efd-253512d4da6e&#10;*** Element info: {Using=css selector, value=.b-datalist_letters_to &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; a:nth-child(1) &gt; div:nth-child(4) &gt; div:nth-child(3) &gt; div:nth-child(2)}" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
 Failed to interpret value as array
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'ASD-SMIRNOVA', ip: '192.168.12.35', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8712, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9632, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 07f66090-d905-4fff-9efd-253512d4da6e
 *** Element info: {Using=css selector, value=.b-datalist_letters_to > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a:nth-child(1) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2)}
 	at WebDriverTest.selWebDriver1(WebDriverTest.java:69)
 </failure>
-    <system-err><![CDATA[1526453374763	geckodriver	INFO	geckodriver 0.20.1
-1526453374778	geckodriver	INFO	Listening on 127.0.0.1:13679
-1526453375397	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\DAKYKO~1.ALE\\AppData\\Local\\Temp\\rust_mozprofile.eNgqofmX4ngl"
-1526453378902	Marionette	INFO	Enabled via --marionette
-1526453381266	Marionette	INFO	Listening on port 50631
-1526453381618	Marionette	WARN	TLS certificate errors will be ignored for this session
-мая 16, 2018 8:49:41 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
+    <system-err><![CDATA[1527162409798	geckodriver	INFO	geckodriver 0.20.1
+1527162409813	geckodriver	INFO	Listening on 127.0.0.1:36758
+1527162410455	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\DAKYKO~1.ALE\\AppData\\Local\\Temp\\rust_mozprofile.ypXsT6wNmgkI"
+[GFX1-]: Failed to connect GPU process
+[GFX1-]: [D3D11] failed to get compositor device.
+[GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_NO_DEVICE
+[GFX1-]: [D3D11] failed to get compositor device.
+[GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_NO_DEVICE
+[GFX1-]: Could not get a DXGI adapter
+1527162432742	Marionette	INFO	Listening on port 54236
 Unable to read VR Path Registry from C:\Users\dakyko.alexander\AppData\Local\openvr\openvrpaths.vrpath
-JavaScript warning: https://js.imgsmail.ru/mail/e/utf/ts/1525779390/ru_RU/images/js/ru/build/Compose.js, line 1: unreachable code after return statement
-JavaScript warning: https://js.imgsmail.ru/mail/e/utf/ts/1525779390/ru_RU/images/js/ru/build/Compose.js, line 1: unreachable code after return statement
-JavaScript warning: https://js.imgsmail.ru/mail/e/utf/ts/1525779390/ru_RU/images/js/ru/build/Compose.js, line 1: unreachable code after return statement
-JavaScript warning: https://js.imgsmail.ru/mail/e/utf/ts/1525779390/ru_RU/images/js/ru/build/Compose.js, line 1: unreachable code after return statement
-мая 16, 2018 8:50:15 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+[Child 332, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1527162433074	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Could not get a DXGI adapter
+мая 24, 2018 1:47:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[GFX1-]: Could not get a DXGI adapter
+Unable to read VR Path Registry from C:\Users\dakyko.alexander\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://js.imgsmail.ru/mail/e/utf/ts/1526994513/ru_RU/images/js/ru/build/Compose.js, line 1: unreachable code after return statement
+JavaScript warning: https://js.imgsmail.ru/mail/e/utf/ts/1526994513/ru_RU/images/js/ru/build/Compose.js, line 1: unreachable code after return statement
+JavaScript warning: https://js.imgsmail.ru/mail/e/utf/ts/1526994513/ru_RU/images/js/ru/build/Compose.js, line 1: unreachable code after return statement
+JavaScript warning: https://js.imgsmail.ru/mail/e/utf/ts/1526994513/ru_RU/images/js/ru/build/Compose.js, line 1: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\dakyko.alexander\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9968, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9968, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+мая 24, 2018 1:47:51 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
 WARNING: WebDriverException thrown by findElement(By.cssSelector: .b-datalist_letters_to > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a:nth-child(1) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2))
 org.openqa.selenium.WebDriverException: Failed to interpret value as array
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'ASD-SMIRNOVA', ip: '192.168.12.35', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8712, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9632, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 07f66090-d905-4fff-9efd-253512d4da6e
 *** Element info: {Using=css selector, value=.b-datalist_letters_to > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a:nth-child(1) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2)}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -148,30 +160,35 @@ Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
 
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
 ]]></system-err>
   </testcase>
-  <testcase name="tearDown" classname="WebDriverTest" time="35.002">
-    <failure message="Failed to decode response from marionette&#10;Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;&#10;System info: host: &apos;ASD-SMIRNOVA&apos;, ip: &apos;192.168.12.35&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8712, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}&#10;Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+  <testcase name="tearDown" classname="WebDriverTest" time="40.007">
+    <failure message="Failed to decode response from marionette&#10;Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;&#10;System info: host: &apos;ASD-SMIRNOVA&apos;, ip: &apos;192.168.12.35&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9632, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}&#10;Session ID: 07f66090-d905-4fff-9efd-253512d4da6e" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
 Failed to decode response from marionette
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'ASD-SMIRNOVA', ip: '192.168.12.35', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8712, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 86b24309-1e43-4565-bd6e-f0f4b91a6c21
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9632, moz:profile: C:\Users\dakyko.alexander\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 07f66090-d905-4fff-9efd-253512d4da6e
 	at WebDriverTest.tearDown(WebDriverTest.java:91)
 </failure>
     <system-err><![CDATA[Unable to read VR Path Registry from C:\Users\dakyko.alexander\AppData\Local\openvr\openvrpaths.vrpath
-[Child 8572, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 8572, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 7368, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 7368, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 9632, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3708, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GFX1-]: Could not get a DXGI adapter
 Unable to read VR Path Registry from C:\Users\dakyko.alexander\AppData\Local\openvr\openvrpaths.vrpath
-[Child 9540, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
-Unable to read VR Path Registry from C:\Users\dakyko.alexander\AppData\Local\openvr\openvrpaths.vrpath
+[Child 7836, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7836, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 ]]></system-err>
   </testcase>
-  <testcase name="checkThreads" classname="company.SmokeTest" time="0.001"/>
   <testcase name="checkThreads" classname="company.SmokeTest" time="0"/>
   <testcase name="checkThreads" classname="company.SmokeTest" time="0"/>
   <testcase name="checkThreads" classname="company.SmokeTest" time="0"/>
@@ -181,7 +198,8 @@ Unable to read VR Path Registry from C:\Users\dakyko.alexander\AppData\Local\ope
   <testcase name="checkThreads" classname="company.SmokeTest" time="0"/>
   <testcase name="checkThreads" classname="company.SmokeTest" time="0"/>
   <testcase name="checkThreads" classname="company.SmokeTest" time="0"/>
-  <testcase name="test1" classname="company.SmokeTest" time="0.001">
+  <testcase name="checkThreads" classname="company.SmokeTest" time="0"/>
+  <testcase name="test1" classname="company.SmokeTest" time="0.016">
     <failure message="expected [3] but found [2]" type="java.lang.AssertionError">java.lang.AssertionError: expected [3] but found [2]
 	at company.SmokeTest.test1(SmokeTest.java:59)
 </failure>

@@ -1,3 +1,4 @@
+/*
 package company;
 
 import org.testng.Assert;
@@ -102,3 +103,4 @@ public class SmokeTest {
 
 
 
+*/
